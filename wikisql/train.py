@@ -4,6 +4,8 @@ import os
 import sys
 import argparse
 import json
+from tensorboard_logger import Logger
+
 import torch
 import torch.nn as nn
 from torch import cuda
@@ -14,7 +16,6 @@ import table.ModelConstructor
 import table.modules
 from table.Utils import set_seed
 import opts
-from tensorboard_logger import Logger
 from path import Path
 
 
